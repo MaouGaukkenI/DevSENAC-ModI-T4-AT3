@@ -1,70 +1,77 @@
 # SQL Query Optimization Project
 
-This project aims to optimize SQL queries using a specific database. The activities were performed based on a query script file and involved several optimization steps.
+## Objective
 
-## Project Description
+This project aims to optimize SQL queries in a specific database, as outlined in the `script_consultas.sql` file. The goal is to improve query performance by applying SQL best practices, including:
 
-1. **Queries and Analysis**
-   - SQL queries were extracted from the `script_consultas.sql` file found under "Conteúdos > Material complementar".
-   - Each query was analyzed using the `EXPLAIN` command to gather execution details and identify potential improvements.
+- Using the `EXPLAIN` command to analyze the execution plan of queries.
+- Optimizing queries by using `JOINs` between tables and specifying the desired columns instead of using `*`.
+- Creating indexes to enhance query performance, focusing mainly on columns used in `WHERE` clauses.
+- Creating `views` for each adjusted query.
 
-2. **Optimization**
-   - Adjustments were made to improve query performance:
-     - Usage of `JOINs` to efficiently combine tables.
-     - Removal of asterisks (*) and specification of required columns to optimize data retrieval.
-   - Indexes were created to enhance query efficiency, especially on columns used in `WHERE` clauses.
+## Procedure
 
-3. **Reevaluation**
-   - After optimizations, the `EXPLAIN` command was run again to check for improvements in performance.
+1. **Initial Analysis and Execution:**
+   - Run the `EXPLAIN` command for each query in the `script_consultas.sql` file to get details about the execution plans.
+   - Capture screenshots of the `EXPLAIN` output.
 
-4. **Creation of Views**
-   - Views were created for each of the adjusted queries using `JOINS`, making it easier to reuse and query the data.
+2. **Query Optimization:**
+   - Modify the queries to use `JOINs` and explicitly specify the columns to be returned.
+   - Create appropriate indexes on the columns used in `WHERE` clauses to improve performance.
+   - Run the `EXPLAIN` command again to check the impact of the optimizations and capture new screenshots.
 
-5. **SQL Scripts**
-   - All adjusted scripts, including optimizations and created views, were stored in `.sql` files.
-   - Comments were added to the scripts for better organization and understanding.
+3. **View Creation:**
+   - Create a `view` for each optimized query with `JOINs`.
 
-## File Structure
+4. **Documentation and Delivery:**
+   - Store all adjusted queries and additional commands in `.sql` scripts.
+   - Use comments to organize and explain the scripts.
+   - Prepare a document outlining the changes and improvements made.
 
-- `optimized_queries.sql`: Contains the adjusted and optimized SQL queries.
-- `views.sql`: Contains the views created for the optimized queries.
-- `scripts.sql`: Contains the scripts with applied adjustments and optimizations.
+## Files
 
-Be sure to review the scripts and provided details to understand the changes and improvements made.
+- `script_consultas.sql`: Contains the original queries to be analyzed and optimized.
+- `.sql` scripts with adjusted queries and explanatory comments.
 
+## Notes
 
+Ensure that you follow best practices for query optimization and document all changes made to facilitate review and understanding of the work completed.
 
-# Projeto de Otimização de Consultas SQL-Traduzido
+# Projeto de Otimização de Consultas SQL-Traduzido:
 
-Este projeto tem como objetivo realizar a otimização de consultas SQL usando um banco de dados específico. As atividades foram executadas com base em um arquivo de script de consultas e envolveram várias etapas de otimização.
+## Objetivo
 
-## Descrição do Projeto
+Este projeto visa otimizar consultas SQL em um banco de dados específico, conforme descrito no arquivo `script_consultas.sql`. O objetivo é melhorar o desempenho das consultas através da aplicação de boas práticas de SQL, incluindo:
 
-1. **Consultas e Análise**
-   - As consultas SQL foram extraídas do arquivo `script_consultas.sql` encontrado na seção "Conteúdos > Material complementar".
-   - Cada consulta foi analisada utilizando o comando `EXPLAIN` para obter detalhes sobre a execução e identificar possíveis melhorias.
+- Uso do comando `EXPLAIN` para analisar o plano de execução das consultas.
+- Otimização das consultas utilizando `JOINs` entre as tabelas e especificação das colunas desejadas ao invés de utilizar `*`.
+- Criação de índices para melhorar a performance das consultas, focando principalmente nas colunas usadas nas cláusulas `WHERE`.
+- Criação de `views` para cada consulta ajustada.
 
-2. **Otimização**
-   - Foram realizados ajustes nas consultas para melhorar a performance:
-     - Uso de `JOINs` para unir as tabelas de forma mais eficiente.
-     - Remoção de asteriscos (*) e especificação das colunas necessárias para otimizar o retorno dos dados.
-   - Criação de índices para melhorar a eficiência das consultas, especialmente em colunas utilizadas nas cláusulas `WHERE`.
+## Procedimento
 
-3. **Reavaliação**
-   - Após as otimizações, o comando `EXPLAIN` foi executado novamente para verificar as melhorias no desempenho.
+1. **Análise e Execução Inicial:**
+   - Execute o comando `EXPLAIN` para cada consulta presente no arquivo `script_consultas.sql` para obter detalhes sobre a execução das consultas.
+   - Capture prints das saídas do comando `EXPLAIN`.
 
-4. **Criação de Views**
-   - Views foram criadas para cada uma das consultas ajustadas utilizando `JOINS`, facilitando a reutilização e consulta dos dados.
+2. **Otimização das Consultas:**
+   - Ajuste as consultas para usar `JOINs` e defina explicitamente as colunas a serem retornadas.
+   - Crie índices apropriados nas colunas usadas nas cláusulas `WHERE` para melhorar o desempenho.
+   - Execute novamente o comando `EXPLAIN` para verificar o impacto das otimizações e capture novos prints.
 
-5. **Scripts SQL**
-   - Todos os scripts ajustados, incluindo as otimizações e as views criadas, foram armazenados em arquivos `.sql`.
-   - Comentários foram adicionados aos scripts para melhor organização e entendimento.
+3. **Criação de Views:**
+   - Crie uma `view` para cada consulta otimizada com `JOINs`.
 
-## Estrutura dos Arquivos
+4. **Documentação e Entrega:**
+   - Armazene todas as consultas ajustadas e os comandos adicionais em scripts `.sql`.
+   - Utilize comentários para organizar e explicar os scripts.
+   - Prepare um documento com as descrições das mudanças e as melhorias obtidas.
 
-- `consultas_otimizadas.sql`: Contém as consultas SQL ajustadas e otimizadas.
-- `views.sql`: Contém as views criadas para as consultas otimizadas.
-- `scripts.sql`: Contém os scripts com os ajustes e otimizações aplicados.
+## Arquivos
 
-Certifique-se de revisar os scripts e os detalhes fornecidos para entender as mudanças e as melhorias realizadas.
+- `script_consultas.sql`: Contém as consultas originais a serem analisadas e otimizadas.
+- Scripts `.sql` com consultas ajustadas e comentários explicativos.
 
+## Observações
+
+Certifique-se de seguir as melhores práticas para otimização de consultas e documentar todas as alterações feitas para facilitar a revisão e a compreensão do trabalho realizado.
